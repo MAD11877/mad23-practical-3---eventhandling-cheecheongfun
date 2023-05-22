@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 name: MAD Practical Test
 on:
   push:
     branches: [main]
+=======
+name: MAD Practical 3.0
+on:
+  push:
+    branches: [main, master]
+>>>>>>> e1f1513a3be49be4f376966c49e4d086a560a67a
     
 jobs:
   build:
@@ -19,6 +26,7 @@ jobs:
       - name: Check files
         run: |
             ls
+<<<<<<< HEAD
       - name: Create Test Files
         run: |
           cp app/src/main/res/layout/activity_main.xml testDirectory/test.xml
@@ -27,15 +35,36 @@ jobs:
           cd app/src/test/java/sg/edu/np/mad/madpractical
           ls
           cd \
+=======
+
+>>>>>>> e1f1513a3be49be4f376966c49e4d086a560a67a
       - name: Setup go
         uses: actions/setup-go@v2
         with:
           go-version: '1.13.7'
+<<<<<<< HEAD
       - name: Run XML Test
         run: |
           ls
           cd testDirectory
           go test -v
+=======
+      
+      - name: Run Tests
+        run: |
+          UPATH=$(find . -path \*app/src/main/java/*/*.java | head -n 1 | sed 's_/[a-zA-Z0-9$]*[.]java__' | sed 's_./app/src/main/java/__' | sed 's_/_._g')
+          echo $UPATH
+          sed -i "s_sg.*[;]_$UPATH;_" testDirectory/*.java
+          head -1 testDirectory/MainActivityTest.java
+          cp app/src/main/res/layout/activity_main.xml testDirectory/test.xml
+          cd testDirectory
+          ls
+          #go test -v
+          #go run arrange.go
+          cd ..
+          ls
+          
+>>>>>>> e1f1513a3be49be4f376966c49e4d086a560a67a
       - name: Make gradlew executable
         run: chmod +x ./gradlew
   
