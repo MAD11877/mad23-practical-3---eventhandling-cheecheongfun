@@ -33,7 +33,7 @@ public class ListActivity extends AppCompatActivity {
         Log.v(title,"Start");
     }
 
-
+    // A
     @Override
     protected void onResume(){
         super.onResume();
