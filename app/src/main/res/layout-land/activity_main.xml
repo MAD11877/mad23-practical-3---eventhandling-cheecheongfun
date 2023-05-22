@@ -71,6 +71,7 @@
         android:id="@+id/textView6"
         android:layout_width="734dp"
         android:layout_height="50dp"
+        android:background="#6750A3"
         android:gravity="center_vertical"
         android:text="  MADPractical"
         android:textColor="#FEFAFD"
