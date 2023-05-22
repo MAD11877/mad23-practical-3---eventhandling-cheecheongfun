@@ -26,7 +26,7 @@ public class ListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list);
         Log.v(title, "Create");
     }
-
+    //a
     @Override
     protected void onStart(){
         super.onStart();
