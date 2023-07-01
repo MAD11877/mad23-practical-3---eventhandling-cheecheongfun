@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     final String TITLE = "Main Activity";
     private int generateRanNum(){
         Random ran = new Random();
-        int myNumber = ran.nextInt(999999);
+        int myNumber = ran.nextInt(100000);
         return myNumber;
     }
     User user1;
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button messageButton = findViewById(R.id.button2);
         messageButton.setOnClickListener(new View.OnClickListener(){
-            @Override
+               @Override
             public void onClick(View v) {
                 Intent myIntent1 = new Intent(MainActivity.this, MessageGroup.class);
                 startActivity(myIntent1);

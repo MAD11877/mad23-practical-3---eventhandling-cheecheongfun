@@ -25,7 +25,7 @@
         android:layout_width="370dp"
         android:layout_height="45dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="Group 1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -35,7 +35,7 @@
         style="@style/Widget.AppCompat.Button.Small"
         android:layout_width="370dp"
         android:layout_height="45dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
         android:text="Group 2"
         app:layout_constraintStart_toStartOf="parent"
